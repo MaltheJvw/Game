@@ -6,11 +6,8 @@ namespace Game
 {
     internal class Program : Base
     {
-       
         static void Main(string[] args)
         {
-
-            Player PC = new Player();
 
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("╔══════════════════════════════════════════════════════════════════════╗");
@@ -21,16 +18,18 @@ namespace Game
 
             string Menu = Console.ReadLine();
 
-            switch(Menu)
+            switch (Menu)
             {
                 case "1":
-                    PC.PlayerCustomize();
+                    Customization characterCustomize = new Customization();
+                    Player Pc = characterCustomize.RaceSelection();
+                    Console.WriteLine("Character created:");
+                    Console.WriteLine(Pc.ToString());
                     break;
-  
+
                 default:
                     break;
             }
         }
-        
     }
 }

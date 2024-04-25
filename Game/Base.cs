@@ -8,13 +8,14 @@ namespace Game
 {
     internal class Base
     {
-        //field
 
-        public string _race {  get; set; }
-        public string _name {  get; set; }
-        public int _hp {  get; set; }
+        //Properties bruges ved DTO'er Data Transfer Object 
+        public string Race {  get; set; }
+  
+        public string Name {  get; set; } //Auto generet propery med hiddet fielt 
+        public int Hp {  get; set; }
 
-        public int _lvl { get; set; }
+        public int Lvl { get; set; }
         
     }
 }

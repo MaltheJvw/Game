@@ -19,17 +19,17 @@ namespace Game
         }
         public NPC(string name, int hp, int xp, NPCType type)
         {
-            _name = name;
-            _hp = hp;
-            _xp = xp;
+            Name = name;
+            Hp = hp;
+            Xp = xp;
             Type = type;
         }
         public NPCType Type { get; set; }
-        public int _xp { get; set; }
+        public int Xp { get; set; }
 
         public override string ToString()
         {
-            return $"NPCName: {_name} HealthPoints : {_hp} XP: {_xp} Race: {Type} ";
+            return $"NPCName: {Name} HealthPoints : {Hp} XP: {Xp} Race: {Type} ";
         }
     }
 }
